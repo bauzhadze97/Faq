@@ -11,6 +11,10 @@ body {
   font-family: "Kumbh Sans";
   font-weight: 400;
   background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -22,6 +26,7 @@ main {
 main .illustration {
   background-size: 297px 180px;
   margin: -108px 0 23px 0;
+  max-width: 400px;
   filter: drop-shadow(10px 35px 4px rgba(104, 98, 230, 0.1));
 }
 main section h1 {
@@ -69,6 +74,11 @@ main section .faq.active .question h2 {
   font-weight: 700;
 }
 
+@media (min-width: 450px) {
+  main * .illustration {
+    margin: -108px 10% 23px 10%;
+  }
+}
 @media (min-width: 1440px) {
   main {
     display: grid;
