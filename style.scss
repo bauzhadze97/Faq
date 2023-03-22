@@ -55,6 +55,7 @@ main {
         }
         &.active .answer{
             max-height: 300px;
+            animation: fade 1s ease-in-out;
         }
         &.active .arrow{
             transform: rotate(180deg);
@@ -63,5 +64,15 @@ main {
         &.active .question h2{
             font-weight: 700;
         }
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
     }
 }
