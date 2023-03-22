@@ -24,51 +24,75 @@ main .illustration {
   margin: -108px 0 23px 0;
   filter: drop-shadow(10px 35px 4px rgba(104, 98, 230, 0.1));
 }
-main h1 {
+main section h1 {
   display: flex;
   justify-content: center;
   font-weight: 700;
   font-size: 32px;
   padding: 0 0 40px 0;
 }
-main .faq {
+main section .faq {
   margin: 0 25px 19px 25px;
 }
-main .faq .line {
+main section .faq .line {
   margin: 18px 0 0 0;
   border-bottom: 1px solid rgb(232, 232, 234);
 }
-main .faq .question {
+main section .faq .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .faq .question h2 {
+main section .faq .question h2 {
   font-size: 13px;
   font-weight: 400;
 }
-main .faq .answer {
+main section .faq .answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.8s ease;
 }
-main .faq .answer p {
+main section .faq .answer p {
   color: #787887;
   font-size: 12px;
   padding: 13px 0 0 0;
 }
-main .faq.active .answer {
+main section .faq.active .answer {
   max-height: 300px;
   animation: fade 1s ease-in-out;
 }
-main .faq.active .arrow {
+main section .faq.active .arrow {
   transform: rotate(180deg);
   transition: transform 0.8 ease;
 }
-main .faq.active .question h2 {
+main section .faq.active .question h2 {
   font-weight: 700;
 }
 
+@media (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 450px 539px;
+    justify-content: center;
+    margin: 130px 240px 130px 280px;
+  }
+  main .image .illustration {
+    width: 472px;
+    height: 359px;
+    margin: 65px 0 30px -103px;
+  }
+  main .faqq {
+    margin: 65px 0 0 0;
+  }
+  main .faqq h1 {
+    margin: 0 0 0 25px;
+    font-size: 32px;
+    justify-content: flex-start;
+  }
+  main .faqq .faq {
+    margin: 0 111px 19px 25px;
+  }
+}
 @keyframes fade {
   from {
     opacity: 0;

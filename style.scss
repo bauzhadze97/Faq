@@ -21,6 +21,7 @@ main {
         margin: -108px 0 23px 0;
         filter: drop-shadow(10px 35px 4px rgba(104, 98, 230, 0.1));
     }
+ & section {
     & h1{
         display: flex;
         justify-content: center;
@@ -63,6 +64,31 @@ main {
         }
         &.active .question h2{
             font-weight: 700;
+        }
+    }
+  }
+}
+@media (min-width: 1440px){
+    main {
+        display: grid;
+        grid-template-columns: 450px 539px;
+        justify-content: center;
+        margin: 130px 240px 130px 280px;
+        & .image .illustration{
+            width: 472px;
+            height: 359px;
+            margin: 65px 0 30px -103px;
+        }
+        & .faqq{
+            margin: 65px 0 0 0;
+            & h1{
+                margin: 0 0 0 25px;
+                font-size: 32px;
+                justify-content: flex-start;
+            }
+            & .faq{
+                margin: 0 111px 19px 25px;
+            }
         }
     }
 }
