@@ -39,8 +39,10 @@ main {
         & .line{
             margin: 18px 0 0 0;
             border-bottom: 1px solid rgba(232, 232, 234, 1);
+            cursor:pointer;
         }
         & .question{
+            cursor:pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -53,6 +55,7 @@ main {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.8s ease;
+            cursor:pointer;
             & p{
                 color: #787887;
                 font-size: 12px;
@@ -62,6 +65,7 @@ main {
         &.active .answer{
             max-height: 300px;
             animation: fade 1s ease-in-out;
+            cursor:pointer;
         }
         &.active .arrow{
             transform: rotate(180deg);
